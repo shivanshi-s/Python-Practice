@@ -19,3 +19,24 @@ print('-------------------\n-------------------')
 
 spam = "hello world"
 print(spam.upper())
+
+print('Hello there'.startswith('hello'))
+
+print(','.join(['cats','rats','mats']))
+
+print('My name is Simon.'.split())
+
+print('Hello'.rjust(10))
+print('hello'.ljust(10,'*'))
+print('Hello'.center(20,'='))
+
+print('\n')
+
+spam = "This is amazing"
+print(spam.replace('i', 'X1Z'))
+
+print('\n')
+
+import pyperclip
+pyperclip.copy('Helloooo!')
+print(pyperclip.paste())
