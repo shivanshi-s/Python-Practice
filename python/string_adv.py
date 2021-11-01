@@ -40,3 +40,13 @@ print('\n')
 import pyperclip
 pyperclip.copy('Helloooo!')
 print(pyperclip.paste())
+
+
+#=================== conversion specifiers ==========================
+
+name = 'Alice'
+place = 'my house'
+time = '7pm'
+food = 'pizza'
+
+print('Hello %s, you are invited to a party at %s at %s please bring %s . ' % (name, place,time,food) )
