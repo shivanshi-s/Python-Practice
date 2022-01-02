@@ -18,4 +18,4 @@ Trying to get the practice of python in my ever-going journey to code!
 <hr>
 
 _If you found this useful, give it a ⭐
-connect with me on [Twitter](https://twitter.com/whatshivashi)!_
+connect with me on [Twitter](https://twitter.com/whatshivanshi)!_
