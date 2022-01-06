@@ -45,8 +45,26 @@ num_list.reverse()
 
 # ------------------------------------------
 #tuple - for coordinates, hold information
-
+#KEY DIFFERENCE = IMMUTABLE  - CANNOT BE CHANGED
 position = (2,'Hello')
 color = (255,255,255)
 print(type(color))
+
+t = ('one',2,3)
+mylist = [1,2,3]
+len(t)
+
+t[0] #one
+
+t = ('a','b','c')
+t.count('a') # all the index locations a occurs
+t.index('a') # the very first time it appears in the index
+
+#immutability ==========
+
+mylist[0] = 'NEW'
+print(mylist)
+t[0] = 'NEW' #error
+
+# why use tuples --------> passing objects making sure they dont get changed ----- DATA INTEGRITY 
 
