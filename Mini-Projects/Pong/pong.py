@@ -49,8 +49,8 @@ ball.speed(0)
 ball.shape("circle")
 ball.color("yellow")
 ball.penup()
-ball.dx  = 0.15
-ball.dy = 0.15 #everytime the ball moves, it moves 2 pixels
+ball.dx  = 2
+ball.dy = 2#everytime the ball moves, it moves 2 pixels
 
 
 # Pen 
@@ -93,7 +93,11 @@ wn.onkeypress(paddle_b_up,"Up")
 wn.onkeypress(paddle_b_down,"Down")
 
 # main game loop
-while True:
+def tick():
+   global score_a
+   global score_b
+   wn.ontimer(tick, 10)
+
    wn.update()
 
    #Move the ball
@@ -127,7 +131,11 @@ while True:
    if (ball.xcor() > 340 and ball.xcor() < 350) and (ball.ycor() < paddle_b.ycor() + 40 and ball.ycor() > paddle_b.ycor() - 40):
       ball.setx(340)
       ball.dx *= -1
-   
+
    if (ball.xcor() < -340 and ball.xcor() > -350) and (ball.ycor() < paddle_a.ycor() + 40 and ball.ycor() > paddle_a.ycor() - 40):
       ball.setx(-340)
       ball.dx *= -1
+
+if __name__ == "__main__":
+    tick()
+    wn.mainloop() 
