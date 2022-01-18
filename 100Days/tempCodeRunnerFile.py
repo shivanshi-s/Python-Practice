@@ -1,2 +1,1 @@
-len(mysample) #error
-# print(mysample)
+img
